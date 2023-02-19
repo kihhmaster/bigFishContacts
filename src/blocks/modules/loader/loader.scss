@@ -1,0 +1,59 @@
+.loader{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #ffffff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	&__center{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		opacity: 0;
+	}
+	&__logo{
+		margin-right: vw(12);
+		width: vw(65);
+		@include max(md){
+			width: vw2(65);
+		}
+		@include max(sm){
+			width: vw3(65);
+		}
+		@include max(xs){
+			width: vw4(65);
+		}
+		img{
+			width: 100%;
+			margin-top: vw(6);
+			@include max(md){
+				margin-top: vw2(6);
+			}
+			@include max(sm){
+				margin-top: vw3(6);
+			}
+			@include max(xs){
+				margin-top: vw4(6);
+			}
+		}
+	}
+	&__title{
+		width: vw(181);
+		@include max(md){
+			width: vw2(181);
+		}
+		@include max(sm){
+			width: vw3(181);
+		}
+		@include max(xs){
+			width: vw4(181);
+		}
+		svg{
+			width: 100%;
+		}
+	}
+}
